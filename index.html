@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Prosty i responsywny landing page">
+  <title>Landing Page — Prosty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Moja Marka</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#features">Funkcje</a></li>
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1 class="hero-title">Zoptymalizowane rozwiązania dla Twojego biznesu</h1>
+        <p class="hero-sub">Szybkie, dostępne i gotowe do użycia — zacznij już dziś.</p>
+        <p><a class="cta" href="#contact">Skontaktuj się</a></p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container grid">
+        <article class="card">
+          <h3>Dobre praktyki</h3>
+          <p>Responsywny design i optymalna wydajność.</p>
+        </article>
+        <article class="card">
+          <h3>Dostępność</h3>
+          <p>Semantyczne znaczniki i obsługa klawiatury.</p>
+        </article>
+        <article class="card">
+          <h3>Wsparcie</h3>
+          <p>Szybkie wdrożenia i dokumentacja.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>O nas</h2>
+        <p>Tworzymy proste i skuteczne strony internetowe, które konwertują.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <label for="name">Imię</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="cta">Wyślij</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Moja Marka. Wszystkie prawa zastrzeżone.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
